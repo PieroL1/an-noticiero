@@ -149,7 +149,15 @@
       ?>
       <div class="row mb-2">
         <div class="col-md-6">
-          <div class="card flex-md-row mb-4 shadow-sm ">
+          <div class="card flex-md-row mb-4 shadow-sm card-news">
+            <?php if (!empty($economia["imagen"])): ?>
+              <img
+                class="card-img-top img-fluid card-news-image"
+                src="<?php echo htmlspecialchars($economia["imagen"], ENT_QUOTES, "UTF-8"); ?>"
+                alt="<?php echo htmlspecialchars($economia["titulo"], ENT_QUOTES, "UTF-8"); ?>"
+                loading="lazy"
+              >
+            <?php endif; ?>
             <div class="card-body d-flex flex-column align-items-start col-md-12">
               <strong class="d-inline-block mb-2 text-secondary">Economía</strong>
               <h3 class="mb-0">
@@ -173,7 +181,15 @@
           </div>
         </div>
         <div class="col-md-6">
-          <div class="card flex-md-row mb-4 shadow-sm ">
+          <div class="card flex-md-row mb-4 shadow-sm card-news">
+            <?php if (!empty($opinion["imagen"])): ?>
+              <img
+                class="card-img-top img-fluid card-news-image"
+                src="<?php echo htmlspecialchars($opinion["imagen"], ENT_QUOTES, "UTF-8"); ?>"
+                alt="<?php echo htmlspecialchars($opinion["titulo"], ENT_QUOTES, "UTF-8"); ?>"
+                loading="lazy"
+              >
+            <?php endif; ?>
             <div class="card-body d-flex flex-column align-items-start col-md-12">
               <strong class="d-inline-block mb-2 text-warning">Opinión</strong>
               <h3 class="mb-0">
@@ -206,7 +222,15 @@
       ?>
       <div class="row mb-2">
         <div class="col-md-6">
-          <div class="card flex-md-row mb-4 shadow-sm ">
+          <div class="card flex-md-row mb-4 shadow-sm card-news">
+            <?php if (!empty($tecnologia["imagen"])): ?>
+              <img
+                class="card-img-top img-fluid card-news-image"
+                src="<?php echo htmlspecialchars($tecnologia["imagen"], ENT_QUOTES, "UTF-8"); ?>"
+                alt="<?php echo htmlspecialchars($tecnologia["titulo"], ENT_QUOTES, "UTF-8"); ?>"
+                loading="lazy"
+              >
+            <?php endif; ?>
             <div class="card-body d-flex flex-column align-items-start col-md-12">
               <strong class="d-inline-block mb-2 text-primary">Tecnología</strong>
               <h3 class="mb-0">
@@ -230,7 +254,15 @@
           </div>
         </div>
         <div class="col-md-6">
-          <div class="card flex-md-row mb-4 shadow-sm ">
+          <div class="card flex-md-row mb-4 shadow-sm card-news">
+            <?php if (!empty($ciencia["imagen"])): ?>
+              <img
+                class="card-img-top img-fluid card-news-image"
+                src="<?php echo htmlspecialchars($ciencia["imagen"], ENT_QUOTES, "UTF-8"); ?>"
+                alt="<?php echo htmlspecialchars($ciencia["titulo"], ENT_QUOTES, "UTF-8"); ?>"
+                loading="lazy"
+              >
+            <?php endif; ?>
             <div class="card-body d-flex flex-column align-items-start col-md-12">
               <strong class="d-inline-block mb-2 text-success">Ciencia</strong>
               <h3 class="mb-0">
@@ -259,11 +291,20 @@
       <!-- Fila 4 -->
       <?php
         include("secciones/cultura.php");
+        include("secciones/nube.php");
         include("secciones/gente.php");
       ?>
       <div class="row mb-2">
         <div class="col-md-6">
-          <div class="card flex-md-row mb-4 shadow-sm ">
+          <div class="card flex-md-row mb-4 shadow-sm card-news">
+            <?php if (!empty($cultura["imagen"])): ?>
+              <img
+                class="card-img-top img-fluid card-news-image"
+                src="<?php echo htmlspecialchars($cultura["imagen"], ENT_QUOTES, "UTF-8"); ?>"
+                alt="<?php echo htmlspecialchars($cultura["titulo"], ENT_QUOTES, "UTF-8"); ?>"
+                loading="lazy"
+              >
+            <?php endif; ?>
             <div class="card-body d-flex flex-column align-items-start col-md-12">
               <strong class="d-inline-block mb-2 text-secondary">Cultura</strong>
               <h3 class="mb-0">
@@ -287,7 +328,15 @@
           </div>
         </div>
         <div class="col-md-6">
-          <div class="card flex-md-row mb-4 shadow-sm ">
+          <div class="card flex-md-row mb-4 shadow-sm card-news">
+            <?php if (!empty($nube["imagen"])): ?>
+              <img
+                class="card-img-top img-fluid card-news-image"
+                src="<?php echo htmlspecialchars($nube["imagen"], ENT_QUOTES, "UTF-8"); ?>"
+                alt="<?php echo htmlspecialchars($nube["titulo"], ENT_QUOTES, "UTF-8"); ?>"
+                loading="lazy"
+              >
+            <?php endif; ?>
             <div class="card-body d-flex flex-column align-items-start col-md-12">
               <strong class="d-inline-block mb-2 text-warning">Nube</strong>
               <h3 class="mb-0">
@@ -317,11 +366,20 @@
       <?php
         include("secciones/deportes.php");
         include("secciones/television.php");
+        include("secciones/uns.php");
         include("secciones/video.php");
       ?>
       <div class="row mb-2">
         <div class="col-md-4">
-          <div class="card flex-md-row mb-4 shadow-sm ">
+          <div class="card flex-md-row mb-4 shadow-sm card-news">
+            <?php if (!empty($deportes["imagen"])): ?>
+              <img
+                class="card-img-top img-fluid card-news-image"
+                src="<?php echo htmlspecialchars($deportes["imagen"], ENT_QUOTES, "UTF-8"); ?>"
+                alt="<?php echo htmlspecialchars($deportes["titulo"], ENT_QUOTES, "UTF-8"); ?>"
+                loading="lazy"
+              >
+            <?php endif; ?>
             <div class="card-body d-flex flex-column align-items-start col-md-12">
               <strong class="d-inline-block mb-2 text-primary">Deportes</strong>
               <h3 class="mb-0">
@@ -345,7 +403,15 @@
           </div>
         </div>
         <div class="col-md-4">
-          <div class="card flex-md-row mb-4 shadow-sm ">
+          <div class="card flex-md-row mb-4 shadow-sm card-news">
+            <?php if (!empty($television["imagen"])): ?>
+              <img
+                class="card-img-top img-fluid card-news-image"
+                src="<?php echo htmlspecialchars($television["imagen"], ENT_QUOTES, "UTF-8"); ?>"
+                alt="<?php echo htmlspecialchars($television["titulo"], ENT_QUOTES, "UTF-8"); ?>"
+                loading="lazy"
+              >
+            <?php endif; ?>
             <div class="card-body d-flex flex-column align-items-start col-md-12">
               <strong class="d-inline-block mb-2 text-success">Televisión</strong>
               <h3 class="mb-0">
@@ -369,7 +435,15 @@
           </div>
         </div>
         <div class="col-md-4">
-          <div class="card flex-md-row mb-4 shadow-sm ">
+          <div class="card flex-md-row mb-4 shadow-sm card-news">
+            <?php if (!empty($uns["imagen"])): ?>
+              <img
+                class="card-img-top img-fluid card-news-image"
+                src="<?php echo htmlspecialchars($uns["imagen"], ENT_QUOTES, "UTF-8"); ?>"
+                alt="<?php echo htmlspecialchars($uns["titulo"], ENT_QUOTES, "UTF-8"); ?>"
+                loading="lazy"
+              >
+            <?php endif; ?>
             <div class="card-body d-flex flex-column align-items-start col-md-12">
               <strong class="d-inline-block mb-2 text-success">UNS</strong>
               <h3 class="mb-0">
@@ -403,7 +477,15 @@
       ?>
       <div class="row mb-2">
         <div class="col-md-4">
-          <div class="card flex-md-row mb-4 shadow-sm ">
+          <div class="card flex-md-row mb-4 shadow-sm card-news">
+            <?php if (!empty($formacion["imagen"])): ?>
+              <img
+                class="card-img-top img-fluid card-news-image"
+                src="<?php echo htmlspecialchars($formacion["imagen"], ENT_QUOTES, "UTF-8"); ?>"
+                alt="<?php echo htmlspecialchars($formacion["titulo"], ENT_QUOTES, "UTF-8"); ?>"
+                loading="lazy"
+              >
+            <?php endif; ?>
             <div class="card-body d-flex flex-column align-items-start col-md-12">
               <strong class="d-inline-block mb-2 text-primary">Formación</strong>
               <h3 class="mb-0">
@@ -427,7 +509,15 @@
           </div>
         </div>
         <div class="col-md-4">
-          <div class="card flex-md-row mb-4 shadow-sm ">
+          <div class="card flex-md-row mb-4 shadow-sm card-news">
+            <?php if (!empty($empleo["imagen"])): ?>
+              <img
+                class="card-img-top img-fluid card-news-image"
+                src="<?php echo htmlspecialchars($empleo["imagen"], ENT_QUOTES, "UTF-8"); ?>"
+                alt="<?php echo htmlspecialchars($empleo["titulo"], ENT_QUOTES, "UTF-8"); ?>"
+                loading="lazy"
+              >
+            <?php endif; ?>
             <div class="card-body d-flex flex-column align-items-start col-md-12">
               <strong class="d-inline-block mb-2 text-success">Empleo</strong>
               <h3 class="mb-0">
@@ -451,7 +541,15 @@
           </div>
         </div>
         <div class="col-md-4">
-          <div class="card flex-md-row mb-4 shadow-sm ">
+          <div class="card flex-md-row mb-4 shadow-sm card-news">
+            <?php if (!empty($sociedad["imagen"])): ?>
+              <img
+                class="card-img-top img-fluid card-news-image"
+                src="<?php echo htmlspecialchars($sociedad["imagen"], ENT_QUOTES, "UTF-8"); ?>"
+                alt="<?php echo htmlspecialchars($sociedad["titulo"], ENT_QUOTES, "UTF-8"); ?>"
+                loading="lazy"
+              >
+            <?php endif; ?>
             <div class="card-body d-flex flex-column align-items-start col-md-12">
               <strong class="d-inline-block mb-2 text-success">Sociedad</strong>
               <h3 class="mb-0">
@@ -484,7 +582,15 @@
       ?>
       <div class="row mb-2">
         <div class="col-md-6">
-          <div class="card flex-md-row mb-4 shadow-sm ">
+          <div class="card flex-md-row mb-4 shadow-sm card-news">
+            <?php if (!empty($openstack["imagen"])): ?>
+              <img
+                class="card-img-top img-fluid card-news-image"
+                src="<?php echo htmlspecialchars($openstack["imagen"], ENT_QUOTES, "UTF-8"); ?>"
+                alt="<?php echo htmlspecialchars($openstack["titulo"], ENT_QUOTES, "UTF-8"); ?>"
+                loading="lazy"
+              >
+            <?php endif; ?>
             <div class="card-body d-flex flex-column align-items-start col-md-12">
               <strong class="d-inline-block mb-2 text-primary">OpenStack</strong>
               <h3 class="mb-0">
@@ -508,7 +614,15 @@
           </div>
         </div>
         <div class="col-md-6">
-          <div class="card flex-md-row mb-4 shadow-sm ">
+          <div class="card flex-md-row mb-4 shadow-sm card-news">
+            <?php if (!empty($git["imagen"])): ?>
+              <img
+                class="card-img-top img-fluid card-news-image"
+                src="<?php echo htmlspecialchars($git["imagen"], ENT_QUOTES, "UTF-8"); ?>"
+                alt="<?php echo htmlspecialchars($git["titulo"], ENT_QUOTES, "UTF-8"); ?>"
+                loading="lazy"
+              >
+            <?php endif; ?>
             <div class="card-body d-flex flex-column align-items-start col-md-12">
               <strong class="d-inline-block mb-2 text-success">Git</strong>
               <h3 class="mb-0">
@@ -537,11 +651,20 @@
       <!-- Fila 8 -->
       <?php
         include("secciones/contenedores.php");
+        include("secciones/clasificados.php");
         include("secciones/openshift.php");
       ?>
       <div class="row mb-2">
         <div class="col-md-6">
-          <div class="card flex-md-row mb-4 shadow-sm ">
+          <div class="card flex-md-row mb-4 shadow-sm card-news">
+            <?php if (!empty($contenedores["imagen"])): ?>
+              <img
+                class="card-img-top img-fluid card-news-image"
+                src="<?php echo htmlspecialchars($contenedores["imagen"], ENT_QUOTES, "UTF-8"); ?>"
+                alt="<?php echo htmlspecialchars($contenedores["titulo"], ENT_QUOTES, "UTF-8"); ?>"
+                loading="lazy"
+              >
+            <?php endif; ?>
             <div class="card-body d-flex flex-column align-items-start col-md-12">
               <strong class="d-inline-block mb-2 text-secondary">Contenedores</strong>
               <h3 class="mb-0">
@@ -565,7 +688,15 @@
           </div>
         </div>
         <div class="col-md-6">
-          <div class="card flex-md-row mb-4 shadow-sm ">
+          <div class="card flex-md-row mb-4 shadow-sm card-news">
+            <?php if (!empty($clasificados["imagen"])): ?>
+              <img
+                class="card-img-top img-fluid card-news-image"
+                src="<?php echo htmlspecialchars($clasificados["imagen"], ENT_QUOTES, "UTF-8"); ?>"
+                alt="<?php echo htmlspecialchars($clasificados["titulo"], ENT_QUOTES, "UTF-8"); ?>"
+                loading="lazy"
+              >
+            <?php endif; ?>
             <div class="card-body d-flex flex-column align-items-start col-md-12">
               <strong class="d-inline-block mb-2 text-warning">Clasificados</strong>
               <h3 class="mb-0">
