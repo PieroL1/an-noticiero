@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="description" content="">
     <meta name="author" content="">
-    <link rel="icon" href="https://getbootstrap.com/favicon.ico">
+    <link rel="icon" href="https://icons.getbootstrap.com/assets/img/favicons/favicon-32x32.png" sizes="32x32" type="image/png">
 
     <title>DIARIO EL HOCICÓN</title>
 
@@ -39,6 +39,9 @@
               echo $portada["titulo"];
             ?>
           </h1>
+          <p class="lead mb-0">
+            Piero Alexandro Liza Guerrero
+          </p>
           <p class="lead my-3">
             <?php
               echo $portada["resumen"];
