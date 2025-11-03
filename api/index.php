@@ -61,9 +61,10 @@
               echo $portada["titulo"];
             ?>
           </h1>
-          <p class="lead mb-0">
+          <p class="lead mb-0 h4 fw-semibold">
             Piero Alexandro Liza Guerrero
           </p>
+
           <p class="lead my-3">
             <?php
               echo $portada["resumen"];
@@ -625,3 +626,4 @@
     </script>
   </body>
 </html>
+
