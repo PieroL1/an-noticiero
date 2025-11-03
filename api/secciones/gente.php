@@ -1,0 +1,12 @@
+<?php
+/*****
+SUSTITUYE LAS XXX POR UN VALOR DE UNA NOTICIA DE INTERES EN ESTA CATEGORIA
+*****/
+
+$gente = [
+  "titulo" => "Chef cusqueña gana premio internacional a la innovación",
+  "autor" => "Revista Gente",
+  "resumen" => "María Huamán fue reconocida en Madrid Fusión por reinterpretar insumos andinos en menús de degustación sostenibles.",
+  "imagen" => "https://images.unsplash.com/photo-1481833761820-0509d3217039?auto=format&fit=crop&w=1200&q=80",
+];
+?>
