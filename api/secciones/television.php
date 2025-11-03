@@ -4,8 +4,8 @@ SUSTITUYE LAS XXX POR UN VALOR DE UNA NOTICIA DE INTERES EN ESTA CATEGORIA
 *****/
 
 $television = [
-"titulo" => "XXX",
-"autor" => "XXX",
-"resumen" => "XXX",
+  "titulo" => "Serie histórica peruana llegará a plataforma global",
+  "autor" => "Guía Streaming",
+  "resumen" => '"El Rescate de Atahualpa" estrenará su primera temporada en abril con doblaje en cuatro idiomas.',
 ];
 ?>

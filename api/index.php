@@ -6,9 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="description" content="">
     <meta name="author" content="">
-
     <link rel="icon" href="https://cdn-icons-png.flaticon.com/512/3524/3524631.png" sizes="32x32" type="image/png">
-
 
     <title>DIARIO EL HOCICÓN</title>
 
@@ -53,24 +51,21 @@
       <?php
         include("secciones/portada.php");
       ?>
-
-      <div class="jumbotron p-3 p-md-5 text-white rounded bg-primary">
+      <div class="jumbotron p-3 p-md-5 text-white rounded bg-dark">
         <div class="col-md-12 px-0">
           <h1 class="display-4 font-italic">
             <?php
               echo $portada["titulo"];
             ?>
           </h1>
-          <p class="lead mb-0 h4 fw-semibold">
+          <p class="lead mb-0">
             Piero Alexandro Liza Guerrero
           </p>
-
           <p class="lead my-3">
             <?php
               echo $portada["resumen"];
             ?>
           </p>
-
         </div>
       </div>
 
@@ -80,7 +75,6 @@
         include("secciones/nacional.php");
       ?>
       <div class="row mb-2">
-
         <div class="col-md-6">
           <div class="card flex-md-row mb-4 shadow-sm card-news">
             <?php if (!empty($internacional["imagen"])): ?>
@@ -92,7 +86,6 @@
               >
             <?php endif; ?>
             <div class="card-body d-flex flex-column align-items-start col-md-12">
-
               <strong class="d-inline-block mb-2 text-primary">Internacional</strong>
               <h3 class="mb-0">
                 <a class="text-dark" href="#">
@@ -114,7 +107,6 @@
             </div>
           </div>
         </div>
-
         <div class="col-md-6">
           <div class="card flex-md-row mb-4 shadow-sm card-news">
             <?php if (!empty($nacional["imagen"])): ?>
@@ -126,7 +118,6 @@
               >
             <?php endif; ?>
             <div class="card-body d-flex flex-column align-items-start col-md-12">
-
               <strong class="d-inline-block mb-2 text-success">Nacional</strong>
               <h3 class="mb-0">
                 <a class="text-dark" href="#">

@@ -4,8 +4,8 @@ SUSTITUYE LAS XXX POR UN VALOR DE UNA NOTICIA DE INTERES EN ESTA CATEGORIA
 *****/
 
 $ciencia = [
-"titulo" => "XXX",
-"autor" => "XXX",
-"resumen" => "XXX",
+  "titulo" => "Telescopio Webb confirma vapor de agua en exoplaneta templado",
+  "autor" => "Agencia Espacial Europea",
+  "resumen" => "El observatorio detectó agua en la atmósfera de Gliese 486 b y refuerza la búsqueda de mundos habitables.",
 ];
 ?>
