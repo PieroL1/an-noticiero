@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="description" content="">
     <meta name="author" content="">
-    <link rel="icon" href="https://getbootstrap.com/favicon.ico">
+    <link rel="icon" href="https://cdn-icons-png.flaticon.com/512/3524/3524631.png" sizes="32x32" type="image/png">
 
     <title>DIARIO EL HOCICÓN</title>
 
@@ -16,6 +16,25 @@
     <!-- Custom styles for this template -->
     <link href="https://fonts.googleapis.com/css?family=Playfair+Display:700,900" rel="stylesheet">
     <link href="https://getbootstrap.com/docs/4.1/examples/blog/blog.css" rel="stylesheet">
+    <style>
+      .card-news {
+        overflow: hidden;
+      }
+
+      .card-news-image {
+        width: 100%;
+        height: auto;
+        object-fit: cover;
+        flex-shrink: 0;
+      }
+
+      @media (min-width: 768px) {
+        .card-news-image {
+          width: 260px;
+          height: 200px;
+        }
+      }
+    </style>
   </head>
 
   <body>
@@ -39,6 +58,9 @@
               echo $portada["titulo"];
             ?>
           </h1>
+          <p class="lead mb-0">
+            Piero Alexandro Liza Guerrero
+          </p>
           <p class="lead my-3">
             <?php
               echo $portada["resumen"];
@@ -54,7 +76,15 @@
       ?>
       <div class="row mb-2">
         <div class="col-md-6">
-          <div class="card flex-md-row mb-4 shadow-sm ">
+          <div class="card flex-md-row mb-4 shadow-sm card-news">
+            <?php if (!empty($internacional["imagen"])): ?>
+              <img
+                class="card-img-top img-fluid card-news-image"
+                src="<?php echo htmlspecialchars($internacional["imagen"], ENT_QUOTES, "UTF-8"); ?>"
+                alt="<?php echo htmlspecialchars($internacional["titulo"], ENT_QUOTES, "UTF-8"); ?>"
+                loading="lazy"
+              >
+            <?php endif; ?>
             <div class="card-body d-flex flex-column align-items-start col-md-12">
               <strong class="d-inline-block mb-2 text-primary">Internacional</strong>
               <h3 class="mb-0">
@@ -78,7 +108,15 @@
           </div>
         </div>
         <div class="col-md-6">
-          <div class="card flex-md-row mb-4 shadow-sm ">
+          <div class="card flex-md-row mb-4 shadow-sm card-news">
+            <?php if (!empty($nacional["imagen"])): ?>
+              <img
+                class="card-img-top img-fluid card-news-image"
+                src="<?php echo htmlspecialchars($nacional["imagen"], ENT_QUOTES, "UTF-8"); ?>"
+                alt="<?php echo htmlspecialchars($nacional["titulo"], ENT_QUOTES, "UTF-8"); ?>"
+                loading="lazy"
+              >
+            <?php endif; ?>
             <div class="card-body d-flex flex-column align-items-start col-md-12">
               <strong class="d-inline-block mb-2 text-success">Nacional</strong>
               <h3 class="mb-0">
