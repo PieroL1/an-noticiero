@@ -23,13 +23,14 @@
 
       .card-news-image {
         width: 100%;
-        height: auto;
+        height: 220px;
         object-fit: cover;
         flex-shrink: 0;
+        display: block;
       }
 
       @media (min-width: 768px) {
-        .card-news-image {
+        .card-news-horizontal .card-news-image {
           width: 260px;
           height: 200px;
         }
@@ -51,7 +52,7 @@
       <?php
         include("secciones/portada.php");
       ?>
-      <div class="jumbotron p-3 p-md-5 text-white rounded bg-primary">
+      <div class="jumbotron p-3 p-md-5 text-white rounded bg-dark">
         <div class="col-md-12 px-0">
           <h1 class="display-4 font-italic">
             <?php
@@ -76,7 +77,7 @@
       ?>
       <div class="row mb-2">
         <div class="col-md-6">
-          <div class="card flex-md-row mb-4 shadow-sm card-news">
+          <div class="card flex-md-row mb-4 shadow-sm card-news card-news-horizontal">
             <?php if (!empty($internacional["imagen"])): ?>
               <img
                 class="card-img-top img-fluid card-news-image"
@@ -108,7 +109,7 @@
           </div>
         </div>
         <div class="col-md-6">
-          <div class="card flex-md-row mb-4 shadow-sm card-news">
+          <div class="card flex-md-row mb-4 shadow-sm card-news card-news-horizontal">
             <?php if (!empty($nacional["imagen"])): ?>
               <img
                 class="card-img-top img-fluid card-news-image"
@@ -149,7 +150,7 @@
       ?>
       <div class="row mb-2">
         <div class="col-md-6">
-          <div class="card flex-md-row mb-4 shadow-sm card-news">
+          <div class="card flex-md-row mb-4 shadow-sm card-news card-news-horizontal">
             <?php if (!empty($economia["imagen"])): ?>
               <img
                 class="card-img-top img-fluid card-news-image"
@@ -181,7 +182,7 @@
           </div>
         </div>
         <div class="col-md-6">
-          <div class="card flex-md-row mb-4 shadow-sm card-news">
+          <div class="card flex-md-row mb-4 shadow-sm card-news card-news-horizontal">
             <?php if (!empty($opinion["imagen"])): ?>
               <img
                 class="card-img-top img-fluid card-news-image"
@@ -222,7 +223,7 @@
       ?>
       <div class="row mb-2">
         <div class="col-md-6">
-          <div class="card flex-md-row mb-4 shadow-sm card-news">
+          <div class="card flex-md-row mb-4 shadow-sm card-news card-news-horizontal">
             <?php if (!empty($tecnologia["imagen"])): ?>
               <img
                 class="card-img-top img-fluid card-news-image"
@@ -254,7 +255,7 @@
           </div>
         </div>
         <div class="col-md-6">
-          <div class="card flex-md-row mb-4 shadow-sm card-news">
+          <div class="card flex-md-row mb-4 shadow-sm card-news card-news-horizontal">
             <?php if (!empty($ciencia["imagen"])): ?>
               <img
                 class="card-img-top img-fluid card-news-image"
@@ -296,7 +297,7 @@
       ?>
       <div class="row mb-2">
         <div class="col-md-6">
-          <div class="card flex-md-row mb-4 shadow-sm card-news">
+          <div class="card flex-md-row mb-4 shadow-sm card-news card-news-horizontal">
             <?php if (!empty($cultura["imagen"])): ?>
               <img
                 class="card-img-top img-fluid card-news-image"
@@ -328,7 +329,7 @@
           </div>
         </div>
         <div class="col-md-6">
-          <div class="card flex-md-row mb-4 shadow-sm card-news">
+          <div class="card flex-md-row mb-4 shadow-sm card-news card-news-horizontal">
             <?php if (!empty($nube["imagen"])): ?>
               <img
                 class="card-img-top img-fluid card-news-image"
@@ -371,7 +372,7 @@
       ?>
       <div class="row mb-2">
         <div class="col-md-4">
-          <div class="card flex-md-row mb-4 shadow-sm card-news">
+          <div class="card mb-4 shadow-sm card-news">
             <?php if (!empty($deportes["imagen"])): ?>
               <img
                 class="card-img-top img-fluid card-news-image"
@@ -403,7 +404,7 @@
           </div>
         </div>
         <div class="col-md-4">
-          <div class="card flex-md-row mb-4 shadow-sm card-news">
+          <div class="card mb-4 shadow-sm card-news">
             <?php if (!empty($television["imagen"])): ?>
               <img
                 class="card-img-top img-fluid card-news-image"
@@ -435,7 +436,7 @@
           </div>
         </div>
         <div class="col-md-4">
-          <div class="card flex-md-row mb-4 shadow-sm card-news">
+          <div class="card mb-4 shadow-sm card-news">
             <?php if (!empty($uns["imagen"])): ?>
               <img
                 class="card-img-top img-fluid card-news-image"
@@ -477,7 +478,7 @@
       ?>
       <div class="row mb-2">
         <div class="col-md-4">
-          <div class="card flex-md-row mb-4 shadow-sm card-news">
+          <div class="card mb-4 shadow-sm card-news">
             <?php if (!empty($formacion["imagen"])): ?>
               <img
                 class="card-img-top img-fluid card-news-image"
@@ -509,7 +510,7 @@
           </div>
         </div>
         <div class="col-md-4">
-          <div class="card flex-md-row mb-4 shadow-sm card-news">
+          <div class="card mb-4 shadow-sm card-news">
             <?php if (!empty($empleo["imagen"])): ?>
               <img
                 class="card-img-top img-fluid card-news-image"
@@ -541,7 +542,7 @@
           </div>
         </div>
         <div class="col-md-4">
-          <div class="card flex-md-row mb-4 shadow-sm card-news">
+          <div class="card mb-4 shadow-sm card-news">
             <?php if (!empty($sociedad["imagen"])): ?>
               <img
                 class="card-img-top img-fluid card-news-image"
@@ -582,7 +583,7 @@
       ?>
       <div class="row mb-2">
         <div class="col-md-6">
-          <div class="card flex-md-row mb-4 shadow-sm card-news">
+          <div class="card flex-md-row mb-4 shadow-sm card-news card-news-horizontal">
             <?php if (!empty($openstack["imagen"])): ?>
               <img
                 class="card-img-top img-fluid card-news-image"
@@ -614,7 +615,7 @@
           </div>
         </div>
         <div class="col-md-6">
-          <div class="card flex-md-row mb-4 shadow-sm card-news">
+          <div class="card flex-md-row mb-4 shadow-sm card-news card-news-horizontal">
             <?php if (!empty($git["imagen"])): ?>
               <img
                 class="card-img-top img-fluid card-news-image"
@@ -656,7 +657,7 @@
       ?>
       <div class="row mb-2">
         <div class="col-md-6">
-          <div class="card flex-md-row mb-4 shadow-sm card-news">
+          <div class="card flex-md-row mb-4 shadow-sm card-news card-news-horizontal">
             <?php if (!empty($contenedores["imagen"])): ?>
               <img
                 class="card-img-top img-fluid card-news-image"
@@ -688,7 +689,7 @@
           </div>
         </div>
         <div class="col-md-6">
-          <div class="card flex-md-row mb-4 shadow-sm card-news">
+          <div class="card flex-md-row mb-4 shadow-sm card-news card-news-horizontal">
             <?php if (!empty($clasificados["imagen"])): ?>
               <img
                 class="card-img-top img-fluid card-news-image"
