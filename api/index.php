@@ -6,7 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="description" content="">
     <meta name="author" content="">
+
     <link rel="icon" href="https://cdn-icons-png.flaticon.com/512/3524/3524631.png" sizes="32x32" type="image/png">
+
 
     <title>DIARIO EL HOCICÓN</title>
 
@@ -32,6 +34,7 @@
       <?php
         include("secciones/portada.php");
       ?>
+
       <div class="jumbotron p-3 p-md-5 text-white rounded bg-dark">
         <div class="col-md-12 px-0">
           <h1 class="display-4 font-italic">
@@ -47,6 +50,7 @@
               echo $portada["resumen"];
             ?>
           </p>
+
         </div>
       </div>
 
@@ -58,6 +62,14 @@
       <div class="row mb-2">
         <div class="col-md-6">
           <div class="card flex-md-row mb-4 shadow-sm ">
+            <?php if (!empty($internacional["imagen"])): ?>
+              <img
+                class="card-img-top img-fluid"
+                src="<?php echo htmlspecialchars($internacional["imagen"], ENT_QUOTES, "UTF-8"); ?>"
+                alt="<?php echo htmlspecialchars($internacional["titulo"], ENT_QUOTES, "UTF-8"); ?>"
+                loading="lazy"
+              >
+            <?php endif; ?>
             <div class="card-body d-flex flex-column align-items-start col-md-12">
               <strong class="d-inline-block mb-2 text-primary">Internacional</strong>
               <h3 class="mb-0">
@@ -82,6 +94,14 @@
         </div>
         <div class="col-md-6">
           <div class="card flex-md-row mb-4 shadow-sm ">
+            <?php if (!empty($nacional["imagen"])): ?>
+              <img
+                class="card-img-top img-fluid"
+                src="<?php echo htmlspecialchars($nacional["imagen"], ENT_QUOTES, "UTF-8"); ?>"
+                alt="<?php echo htmlspecialchars($nacional["titulo"], ENT_QUOTES, "UTF-8"); ?>"
+                loading="lazy"
+              >
+            <?php endif; ?>
             <div class="card-body d-flex flex-column align-items-start col-md-12">
               <strong class="d-inline-block mb-2 text-success">Nacional</strong>
               <h3 class="mb-0">
